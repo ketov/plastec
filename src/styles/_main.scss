@@ -1,15 +1,15 @@
 body{
     color: #000000;
-    font-family: $SR;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .wrapper{
     margin: 0 auto;
-    min-width: 960px;
-    width: 960px;
+    min-width: 940px;
     padding: 0;
+    width: 940px;
 }
 
 .clear{
@@ -28,11 +28,4 @@ body{
 @font-face{
     font-family: SkodaBold;
     src: url('../fonts/skodapro-bold-webfont.ttf');
-}
-
-@media(max-width: 1020px){
-    .wrapper{
-        min-width: auto;
-        width: 96%;
-    }
 }

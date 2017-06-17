@@ -27,8 +27,6 @@ import "script!./libs/jquery.matchHeight-min.js";
 
 // Собственный js
 import "./main";
-import "./blocks/cars";
-import "./blocks/map";
-import "./blocks/timer";
+//import "./blocks/cars";
 
 //import "./pages/card";
