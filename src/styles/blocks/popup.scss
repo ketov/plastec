@@ -1,0 +1,44 @@
+.popup{
+    background: red;
+    left: 50%;
+    margin: 62px 0 0 -324px;
+    opacity: .5;
+    position: fixed;
+    width: 648px;
+    z-index: 3;
+    &__img{
+        background: url(../img/popup.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        height: 197px;
+        margin: 5px auto 0;
+        width: 636px;
+    }
+    &__header{
+        font-family: SkodaBold,sans-serif;
+        font-size: 210%;
+        font-weight: 600;
+        line-height: 90%;
+        margin: 12px auto 0;
+        max-width: 515px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__text{
+        font-family: SkodaBold,sans-serif;
+        font-size: 120%;
+        line-height: 110%;
+        margin: 9px auto 0;
+        max-width: 595px;
+        text-align: center;
+    }
+    input{
+        border: 1px solid #4ba82e;
+        display: block;
+        font-size: 100%;
+        margin: 14px auto 0;
+        padding: 12px 0 9px 0;
+        text-align: center;
+        width: 302px;
+    }
+}
