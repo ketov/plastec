@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ПЛАС-ТЕК | Написание концепции  программы лояльности</title>
+    <title>ПЛАС-ТЕК | OLAP-отчетность</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;amp;subset=cyrillic-ext">
   </head>
   <body> 
-    <!--img(src="assets/img/concept-template.png" alt="макет" style="position: absolute; opacity: 0.2; left: 72px; top: 0; z-index: 1;")-->
+    <!--img(src="assets/img/olap-template.png" alt="макет" style="position: absolute; opacity: 0.2; left: 72px; top: 0; z-index: 1;")-->
     <header>
       <div class="wrapper"><a class="logo" href="index.html"> <img src="assets/img/logo-header.png" alt="логотип"></a>
         <div class="lab">
@@ -25,7 +25,7 @@
             <li><a class="active" href="" title="Продукты и решения">Продукты и решения</a>
               <ul>
                 <div class="wrapper">
-                  <li><a class="submenuactive" href="concept.html" title="Написание концепции">Написание концепции</a>
+                  <li><a href="concept.html" title="Написание концепции">Написание концепции</a>
                   </li>
                   <li><a href="mobile-app.html" title="Мобильные приложения">Мобильные приложения</a>
                   </li>
@@ -33,7 +33,7 @@
                   </li>
                   <li><a href="marketing.html" title="Маркетинговое сопровождение">Маркетинговое сопровождение</a>
                   </li>
-                  <li><a href="olap.html" title="OLAP-отчетность">OLAP-отчетность</a>
+                  <li><a class="submenuactive" href="olap.html" title="OLAP-отчетность">OLAP-отчетность</a>
                   </li>
                   <div class="clear"></div>
                 </div>
@@ -64,43 +64,18 @@
         </ul>
       </div>
     </nav>
-    <article class="concept wrapper">
-      <section class="img"><img src="assets/img/concept-icon-1.svg" alt="написание концепции программы лояльности"></section>
+    <article class="olap wrapper">
+      <section class="img"><img src="assets/img/olap-icon-1.png" alt="OLAP-отчетность"></section>
       <section class="text">
-        <h1>Написание концепции  <br>программы лояльности</h1>
-        <p>Наш многолетний опыт на рынке позволяет помогать с самым трудным этапом  при запуске программы лояльности – создание концепции программы.</p>
-        <h3>Услуга включает блок работ:</h3>
+        <h1>OLAP - отчетность</h1>
+        <p>
+           Подготовка данных для анализа может занимать много времени. <br>Наша задача – максимально упростить и ускорить этот процесс.  <br>На практике, OLAP-отчеты могут комбинировать отчеты, созданные  <br>и на реляционных базах данных и на OLAP-кубах. <br>Есть несколько вариантов:</p>
         <ul>
-          <li>Изучение и анализ специфики бизнеса Заказчика;</li>
-          <li>Изучение целевой аудитории программы и определение портрета клиента;</li>
-          <li>Определение конкурентных преимуществ программы лояльности;</li>
-          <li>Постановка целей и задач программы лояльности по SMART-формату;</li>
-          <li>Проведение экономических расчетов, определение точки безубыточности  и&nbsp;прогнозируемой прибыли от программы лояльности;</li>
-          <li>Подбор оптимального типа и вида будущей программы лояльности;</li>
-          <li>Определение оптимальных способов коммуникаций с клиентами;</li>
-          <li>Разработка правил работы программы лояльности;</li>
-          <li>Определение требований к отчетности и разработка системы отчетов;</li>
-        </ul>
-        <h3>Результатом оказанной услуги являются:</h3>
-        <ul>
-          <li>Экономический расчет программы;</li>
-          <li>Общая презентация программы для персонала;</li>
-          <li>Описание базовой и акционной логики программы лояльности в виде функционвльных требований.</li>
-        </ul>
-        <div class="concept__result">
-          <div class="concept__result-header">результатом нашей работы станет:</div>
-          <div class="concept__result-items">
-            <div class="concept__result-item"><img class="concept__result-img" src="assets/img/concept-icon-2.svg" alt="">
-              <div class="concept__result-text">Увеличение прибыли</div>
-              <div class="clear"></div>
-            </div>
-            <div class="concept__result-item"><img class="concept__result-img" src="assets/img/concept-icon-3.svg" alt="">
-              <div class="concept__result-text">Сокращение издержек</div>
-              <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
+          <li>Создать стандартный отчет на реляционной базе данных куба.</li>
+          <li>Создать только OLAP отчет, основанный исключительно на кубе.</li>
+          <li>Создать стандартный отчет на реляционной базе данных (либо на базе данных куба, либо на совсем другой базе данных) и добавить OLAP отчет, основанный  на кубе в стандартный отчет.</li>
+          <li>Создать несколько различных OLAP отчетов, основанных на одном или разных кубах. Такие OLAP-отчеты могу существовать сами по себе либо быть включены  в стандартный отчет, основанный на реляционной базе данных.</li>
+        </ul><img src="assets/img/group.png" alt="olap-отчетность">
       </section>
       <div class="clear"></div>
     </article>
