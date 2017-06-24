@@ -1,0 +1,45 @@
+-var menu = {'Продукты и решения': '', 'О компании': '', 'Статьи': 'articles.html'};
+-var submenu1 = {'О нас':'about-company.html', 'Наши технологии':'technologies.html', 'Наши проекты':'projects.html', 'Контакты':'contacts.html'};
+-var submenu2 = {'Написание концепции':'concept.html', 'Мобильные приложения':'mobile-app.html', 'Процессинг программы':'processing.html', 'Маркетинговое сопровождение':'marketing.html',  'OLAP-отчетность':'olap.html'};
+nav.nav-2
+    div.wrapper
+        ul
+            div.wrapper
+                li
+                    a.logo(href="index.html")
+                        img(src="assets/img/logo-nav.png" alt="логотип")
+                each val, key in menu
+                    li
+                        if active === key
+                            a.active(href=val, title=key)= key
+                        else
+                            a(href=val, title=key)= key
+                        if key === 'Продукты и решения'
+                            ul
+                                div.wrapper
+                                    each val, key in submenu2
+                                        li
+                                            if submenuactive === key
+                                                a.submenuactive(href=val, title=key)= key
+                                            else
+                                                a(href=val, title=key)= key
+                                    div.clear
+                        if key === 'О компании'
+                            ul
+                                div.wrapper
+                                    each val, key in submenu1
+                                        li
+                                            if submenuactive === key
+                                                a.submenuactive(href=val, title=key)= key
+                                            else
+                                                a(href=val, title=key)= key
+                                    div.clear
+                
+                li.lang.active
+                    a(href="#") RU                    
+                li.lang.eng
+                    a(href="") ENG
+                                    
+                li.pc
+                    a(href="#") Личный кабинет                
+                div.clear

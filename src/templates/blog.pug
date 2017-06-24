@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title ПЛАС-ТЕК | Блог
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8")   
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic-ext")
+    body  
+
+        //img(src="assets/img/blog-template.png" alt="макет" style="position: absolute; opacity: 0.2; left: 72px; top: 0; z-index: 1;")
+
+        -var active = '';
+        -var submenuactive = '';
+        include includes/nav-2
+        include includes/blog
+        include includes/footer
+        include includes/copyright
+                            
+       
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+        script(src="assets/js/app.min.js")

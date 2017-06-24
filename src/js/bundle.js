@@ -22,11 +22,11 @@
 import "../../bower_components/owl.carousel/dist/owl.carousel.js";
 
 // Библиотеки
-import "script!./libs/e-timer.js";
 import "script!./libs/jquery.matchHeight-min.js";
 
 // Собственный js
 import "./main";
 //import "./blocks/cars";
 
-//import "./pages/card";
+import "./pages/about-company";
+import "./pages/contacts";

@@ -9,6 +9,15 @@ nav{
             float: left;
             font-size: 85%;
             margin: 0 0 0 56px;
+            .logo{
+                a{
+                    display: block;
+                }
+                img{
+                    display: block;
+                    margin: -13px 0 0 0;
+                }
+            }
             a{
                 color: #fff;
                 text-decoration: none;
@@ -22,12 +31,13 @@ nav{
                 display: none;
                 left: 0;
                 margin: 23px 0 0 0;
-                padding: 10px 0 12px 0;
+                padding: 0;                
                 position: absolute;
                 width: 100%;
                 li{
                     font-size: 100%;
                     margin: 0px 0 0 38px;
+                    padding: 10px 0 12px 0;
                     a{
                         text-transform: none;
                     }
@@ -37,6 +47,24 @@ nav{
                 margin: 0;
             }
         }
+    }
+}
+
+.nav-2{
+    ul{
+        padding: 0 0 12px;
+        li{
+            margin: 0 0 0 51px;
+        }
+    }
+    .lang{
+        margin: -3px 0 0;
+    }
+    .eng{    
+        margin: -3px 15px 0 0;
+    }
+    .pc{
+        margin: 0 32px 0 0;
     }
 }
 

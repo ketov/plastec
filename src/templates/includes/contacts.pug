@@ -1,0 +1,29 @@
+section.contacts-text
+    div Адрес: 123557, г. Москва, Большой Тишинский п., д. 38
+    div.phones
+        | Телефоны: 
+        a(href="tel:+78003333236") +8 (800) 333-32-36
+        | ;
+        a(href="tel:+74956053414") +7 (495) 605-34-14
+        | ;
+        a(href="tel:+74956053236") +7 (495) 605-32-36
+    div.email
+        | E-mail: 
+        a(href="mailto:info@plas-tek.ru") info@plas-tek.ru 
+div#map(style="height: 400px; width: 100%;")
+div.contacts-form
+    h1 Обратная связь
+    form
+        div.col-1
+            label(for="name") Как в Вам обращаться
+            input#name
+        div.col-2
+            label(for="phone") Телефон
+            input#phone
+        div.clear
+        label(for="text") Комментарий 
+        textarea#text 
+        div.col-1 <!-- код рекапчи --> 
+        div.col-2 
+            button Отправить
+        div.clear

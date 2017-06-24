@@ -1,0 +1,31 @@
+.article{
+    h1{
+        color: #363636;
+        font-size: 210%;
+        line-height: 115%;
+        margin: 0;
+    }
+    img{
+        margin: 40px 0 36px 0;
+        max-width: 100%;
+    }
+    p{
+        color: #000000;
+        line-height: 165%;
+        margin: 0;
+    }
+}
+
+.article.wrapper{
+    max-width: 620px;
+    min-width: auto;
+    padding: 89px 0 0;
+}
+
+.ya-share2{
+    margin: 31px 0 0 0;
+}
+
+.ya-share2__container_size_m .ya-share2__item {
+    margin: 0 30px 0 0 !important;
+}

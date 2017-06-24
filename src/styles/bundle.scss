@@ -13,6 +13,9 @@
 //@import '_elements.scss';
 
 // Блоки
+@import 'blocks/about-company.scss';
+@import 'blocks/article.scss';
+@import 'blocks/blog.scss';
 @import 'blocks/concept.scss';
 @import 'blocks/copyright.scss';
 @import 'blocks/footer.scss';
@@ -24,7 +27,6 @@
 @import 'blocks/processing.scss';
 
 // Страницы
-//@import 'pages/articles.scss';
+@import 'pages/all-pages.scss';
 
-
-
+@import 'libs/jquery-ui.scss';
