@@ -50,5 +50,41 @@
 }
 
 .olap.wrapper{
-    padding: 126px 0 0 0;
+    padding: 186px 0 0 0;
+}
+
+
+@media(max-width: 850px){
+    .olap{
+        img{
+            margin-left: 0;
+            width: 90%;
+        }
+        .img{
+            display: none;
+        }
+        .text{
+            margin: 0;
+            width: 90%;
+        }
+        h1{
+            font-size: 135%;
+        }
+        h3{
+            font-size: 105%;
+        }
+    }
+    .olap ~ footer{
+        margin: 74px 0 0;
+    }
+}
+
+@media(max-width: 500px){
+    .olap{
+        .text{
+            img{
+                margin: 40px auto 0;
+            }
+        }
+    }
 }

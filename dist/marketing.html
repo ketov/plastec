@@ -18,92 +18,100 @@
         <div class="clear"></div>
       </div>
     </header>
-    <nav>
-      <div class="wrapper">
-        <ul>
-          <div class="wrapper">
-            <li><a class="active" href="" title="Продукты и решения">Продукты и решения</a>
-              <ul>
-                <div class="wrapper">
-                  <li><a href="concept.html" title="Написание концепции">Написание концепции</a>
-                  </li>
-                  <li><a href="mobile-app.html" title="Мобильные приложения">Мобильные приложения</a>
-                  </li>
-                  <li><a href="processing.html" title="Процессинг программы">Процессинг программы</a>
-                  </li>
-                  <li><a class="submenuactive" href="marketing.html" title="Маркетинговое сопровождение">Маркетинговое сопровождение</a>
-                  </li>
-                  <li><a href="olap.html" title="OLAP-отчетность">OLAP-отчетность</a>
-                  </li>
-                  <div class="clear"></div>
-                </div>
-              </ul>
-            </li>
-            <li><a href="" title="О компании">О компании</a>
-              <ul>
-                <div class="wrapper">
-                  <li><a href="about-company.html" title="О нас">О нас</a>
-                  </li>
-                  <li><a href="technologies.html" title="Наши технологии">Наши технологии</a>
-                  </li>
-                  <li><a href="projects.html" title="Наши проекты">Наши проекты</a>
-                  </li>
-                  <li><a href="contacts.html" title="Контакты">Контакты</a>
-                  </li>
-                  <div class="clear"></div>
-                </div>
-              </ul>
-            </li>
-            <li><a href="articles.html" title="Статьи">Статьи</a>
-            </li>
-            <li class="lang active"><a href="#">RU                    </a></li>
-            <li class="lang eng"><a href="">ENG</a></li>
-            <li class="pc"><a href="#">Личный кабинет                </a></li>
+    <div class="fixed-menu-container">
+      <nav>
+        <div class="wrapper">
+          <ul>
+            <div class="wrapper">
+              <div id="hamburger">
+                <div class="hamburger__line hamburger__line--1"></div>
+                <div class="hamburger__line hamburger__line--2"></div>
+                <div class="hamburger__line hamburger__line--3"></div>
+              </div>
+              <li class="logo-mobile"><a href="index.html"><img src="assets/img/logo-mobile.png" alt="логотип"></a></li>
+              <li class="nav-container"><a class="active" href="javascript:void(0);" title="Продукты и решения">Продукты и решения</a><img class="triangle" src="assets/img/triangle-nav.png" alt="треугольник">
+                <ul>
+                  <div class="wrapper">
+                    <li><a href="concept.html" title="Написание концепции">Написание концепции</a>
+                    </li>
+                    <li><a href="mobile-app.html" title="Мобильные приложения">Мобильные приложения</a>
+                    </li>
+                    <li><a href="processing.html" title="Процессинг программы">Процессинг программы</a>
+                    </li>
+                    <li><a class="submenuactive" href="marketing.html" title="Маркетинговое сопровождение">Маркетинговое сопровождение</a>
+                    </li>
+                    <li><a href="olap.html" title="OLAP-отчетность">OLAP-отчетность</a>
+                    </li>
+                    <div class="clear"></div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-container"><a href="javascript:void(0);" title="О компании">О компании</a><img class="triangle" src="assets/img/triangle-nav.png" alt="треугольник">
+                <ul>
+                  <div class="wrapper">
+                    <li><a href="about-company.html" title="О нас">О нас</a>
+                    </li>
+                    <li><a href="technologies.html" title="Наши технологии">Наши технологии</a>
+                    </li>
+                    <li><a href="projects.html" title="Наши проекты">Наши проекты</a>
+                    </li>
+                    <li><a href="contacts.html" title="Контакты">Контакты</a>
+                    </li>
+                    <div class="clear"></div>
+                  </div>
+                </ul>
+              </li>
+              <li class="nav-container"><a href="blog.html" title="Статьи">Статьи</a>
+              </li>
+              <li class="lang active"><a href="#">RU                    </a></li>
+              <li class="lang eng"><a href="">ENG</a></li>
+              <li class="pc"><a href="#">Личный кабинет  </a></li>
+              <div class="clear"></div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <article class="marketing wrapper">
+        <section class="img"><img src="assets/img/marketing-icon-1.svg" alt="маркетинговое сопровождения"></section>
+        <section class="text">
+          <h1>Маркетинговое сопровождение</h1>
+          <h3>Стандартные услуги включают:</h3>
+          <ul>
+            <li>Оценка результатов деятельности имеющейся программы;</li>
+            <li>Рекомендации маркетолога по корректировке программы (при необходимости);</li>
+            <li>Согласование целей программы на период (KPI);</li>
+            <li>Разработка плана активностей на период на основе RFM и LTV-анализа;</li>
+            <li>Добавление в программу новых акций и мероприятий (после маркетингового согласования):разработка логики акции, создание маркетинговых материалов; оценка результатов;</li>
+            <li>Работа с персоналом: разработка инструкций для персонала;  инструктаж персонала;</li>
+            <li>Тренинги по увеличению продаж; проведение мотивационных конкурсов для персонала.</li>
+            <li>Предоставление развернутых отчетов по достижению поставленных задач</li>
+          </ul>
+          <div class="marketing__result"><img class="marketing__result-img" src="assets/img/marketing-icon-2.svg" alt="результаты маркетингового сопровождения">
+            <div class="marketing__result-text">Красивая фраза про работу  и&nbsp;результаты маркетингового сопровождения в Плас-тек</div>
             <div class="clear"></div>
           </div>
-        </ul>
-      </div>
-    </nav>
-    <article class="marketing wrapper">
-      <section class="img"><img src="assets/img/marketing-icon-1.svg" alt="маркетинговое сопровождения"></section>
-      <section class="text">
-        <h1>Маркетинговое сопровождение</h1>
-        <h3>Стандартные услуги включают:</h3>
-        <ul>
-          <li>Оценка результатов деятельности имеющейся программы;</li>
-          <li>Рекомендации маркетолога по корректировке программы (при необходимости);</li>
-          <li>Согласование целей программы на период (KPI);</li>
-          <li>Разработка плана активностей на период на основе RFM и LTV-анализа;</li>
-          <li>Добавление в программу новых акций и мероприятий (после маркетингового согласования):разработка логики акции, создание маркетинговых материалов; оценка результатов;</li>
-          <li>Работа с персоналом: разработка инструкций для персонала;  инструктаж персонала;</li>
-          <li>Тренинги по увеличению продаж; проведение мотивационных конкурсов для персонала.</li>
-          <li>Предоставление развернутых отчетов по достижению поставленных задач</li>
-        </ul>
-        <div class="marketing__result">
-          <div class="marketing__result-text">Красивая фраза про работу  и&nbsp;результаты маркетингового сопровождения в Плас-тек</div><img class="marketing__result-img" src="assets/img/marketing-icon-2.svg" alt="результаты маркетингового сопровождения">
+        </section>
+        <div class="clear"></div>
+      </article>
+      <footer>
+        <div class="wrapper">
+          <div class="col-1"><a class="main" href="#">Продукты и решения</a><a href="#">Написание концепции</a><a href="#">Мобильные приложения</a><a href="#">Процессинг программы</a><a href="#">Маркетинговое сопровождение</a><a href="#">OLAP-отчетность</a></div>
+          <div class="col-2"><a class="main" href="#">О компании</a><a href="#">Наша компания</a><a href="#">Наши проекты</a><a href="#">Наши технологии</a><a href="#">Контакты</a><a class="main" href="#">Статьи</a></div>
+          <div class="col-3"><a class="logo"><img src="assets/img/logo-footer.png" alt="логотип"></a>
+            <div class="contacts">
+              <div class="row">123557, г. Москва, Большой Тишинский пер., д. 38</div>
+              <div class="row">
+                 Телефон: <a href="tel:+74956053236">(495) 605-32-36 </a><a href="tel:+74956053414">(495) 605-34-14</a></div>
+              <div class="row">
+                 E-mail: <a href="mailto:info@plas-tek.ru">info@plas-tek.ru</a></div>
+            </div>
+          </div>
           <div class="clear"></div>
         </div>
-      </section>
-      <div class="clear"></div>
-    </article>
-    <footer>
-      <div class="wrapper">
-        <div class="col-1"><a class="main" href="#">Продукты и решения</a><a href="#">Написание концепции</a><a href="#">Мобильные приложения</a><a href="#">Процессинг программы</a><a href="#">Маркетинговое сопровождение</a><a href="#">OLAP-отчетность</a></div>
-        <div class="col-2"><a class="main" href="#">О компании</a><a href="#">Наша компания</a><a href="#">Наши проекты</a><a href="#">Наши технологии</a><a href="#">Контакты</a><a class="main" href="#">Статьи</a></div>
-        <div class="col-3"><a class="logo"><img src="assets/img/logo-footer.png" alt="логотип"></a>
-          <div class="contacts">
-            <div class="row">123557, г. Москва, Большой Тишинский пер., д. 38</div>
-            <div class="row">
-               Телефон: <a href="tel:+74956053236">(495) 605-32-36 </a><a href="tel:+74956053414">(495) 605-34-14</a></div>
-            <div class="row">
-               E-mail: <a href="mailto:info@plas-tek.ru">info@plas-tek.ru</a></div>
-          </div>
-        </div>
-        <div class="clear"></div>
+      </footer>
+      <div class="copyright">
+        <div class="wrapper">© ВСЕ ПРАВА ЗАЩИЩЕНЫ 2004-2017 ПЛАС-ТЕК®  Перепечатка материалов сайта возможна только с указанием ссылки на www.plas-tek.ru</div>
       </div>
-    </footer>
-    <div class="copyright">
-      <div class="wrapper">© ВСЕ ПРАВА ЗАЩИЩЕНЫ 2004-2017 ПЛАС-ТЕК®  Перепечатка материалов сайта возможна только с указанием ссылки на www.plas-tek.ru</div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="assets/js/app.min.js"></script>

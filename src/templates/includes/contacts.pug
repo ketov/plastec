@@ -10,7 +10,7 @@ section.contacts-text
     div.email
         | E-mail: 
         a(href="mailto:info@plas-tek.ru") info@plas-tek.ru 
-div#map(style="height: 400px; width: 100%;")
+div#map
 div.contacts-form
     h1 Обратная связь
     form
@@ -21,9 +21,10 @@ div.contacts-form
             label(for="phone") Телефон
             input#phone
         div.clear
-        label(for="text") Комментарий 
+        label.contacts-form__comment-label(for="text") Комментарий 
         textarea#text 
         div.col-1 <!-- код рекапчи --> 
         div.col-2 
             button Отправить
+            div.clear
         div.clear

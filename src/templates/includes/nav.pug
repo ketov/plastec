@@ -1,17 +1,25 @@
--var menu = {'Продукты и решения': '', 'О компании': '', 'Статьи': 'articles.html'};
+-var menu = {'Продукты и решения': 'javascript:void(0);', 'О компании': 'javascript:void(0);', 'Статьи': 'blog.html'};
 -var submenu1 = {'О нас':'about-company.html', 'Наши технологии':'technologies.html', 'Наши проекты':'projects.html', 'Контакты':'contacts.html'};
 -var submenu2 = {'Написание концепции':'concept.html', 'Мобильные приложения':'mobile-app.html', 'Процессинг программы':'processing.html', 'Маркетинговое сопровождение':'marketing.html',  'OLAP-отчетность':'olap.html'};
 nav
     div.wrapper
         ul
             div.wrapper
+                div#hamburger
+                    div.hamburger__line.hamburger__line--1
+                    div.hamburger__line.hamburger__line--2
+                    div.hamburger__line.hamburger__line--3
+                li.logo-mobile
+                    a(href="index.html")
+                        img(src="assets/img/logo-mobile.png" alt="логотип")
                 each val, key in menu
-                    li
+                    li.nav-container
                         if active === key
                             a.active(href=val, title=key)= key
                         else
                             a(href=val, title=key)= key
                         if key === 'Продукты и решения'
+                            img.triangle(src="assets/img/triangle-nav.png" alt="треугольник")
                             ul
                                 div.wrapper
                                     each val, key in submenu2
@@ -22,6 +30,7 @@ nav
                                                 a(href=val, title=key)= key
                                     div.clear
                         if key === 'О компании'
+                            img.triangle(src="assets/img/triangle-nav.png" alt="треугольник")
                             ul
                                 div.wrapper
                                     each val, key in submenu1
@@ -38,5 +47,5 @@ nav
                     a(href="") ENG
                                     
                 li.pc
-                    a(href="#") Личный кабинет                
+                    a(href="#") Личный кабинет  
                 div.clear

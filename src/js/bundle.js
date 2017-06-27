@@ -22,11 +22,15 @@
 import "../../bower_components/owl.carousel/dist/owl.carousel.js";
 
 // Библиотеки
-import "script!./libs/jquery.matchHeight-min.js";
+import "script!./libs/swiper.min.js";
+import "script!./libs/jquery.simple-scroll-follow.min.js";
+
 
 // Собственный js
 import "./main";
-//import "./blocks/cars";
+import "./blocks/index-slider";
+import "./blocks/nav";
+import "./blocks/projects-slider";
 
 import "./pages/about-company";
 import "./pages/contacts";

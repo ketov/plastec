@@ -8,18 +8,24 @@ footer{
         color: #ea8211;
         display: block;
         font-size: 90%;
-        margin: 11px 0 0;
+        padding: 0 0 11px 0;
         text-decoration: none;
+        transition: 0.2s;
+        &:hover{
+            color: #ff9f37;
+        }
     }
     a.main{
         text-transform: uppercase;
     }
     .col-1{
         float: left;
+        padding-top: 11px;
     }
     .col-2{
         float: left;
         margin-left: 152px;
+        padding-top: 11px;
     }
     .col-3{
         float: right;
@@ -39,6 +45,38 @@ footer{
         }
         .row{
             margin: 5px 0 0;
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    footer{
+        .col-2{
+            margin-left: 72px;
+        }
+    }
+}
+
+@media(max-width: 840px){
+    footer{
+        .col-3{
+            float: left;
+            margin-top: 38px;
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 500px){
+    footer{
+        .col-1{
+            float: none;
+            margin-top: 5px;
+        }
+        .col-2{
+            float: none;
+            margin-left: 0;
+            margin-top: 13px;
         }
     }
 }

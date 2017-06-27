@@ -17,17 +17,26 @@
 @import 'blocks/article.scss';
 @import 'blocks/blog.scss';
 @import 'blocks/concept.scss';
+@import 'blocks/contacts.scss';
 @import 'blocks/copyright.scss';
 @import 'blocks/footer.scss';
 @import 'blocks/header.scss';
+@import 'blocks/index-about-us.scss';
+@import 'blocks/index-projects.scss';
+@import 'blocks/index-slider.scss';
+@import 'blocks/index-we-do.scss';
 @import 'blocks/marketing.scss';
 @import 'blocks/mobile-app.scss';
 @import 'blocks/nav.scss';
 @import 'blocks/olap.scss';
 @import 'blocks/processing.scss';
+@import 'blocks/projects-slider.scss';
 @import 'blocks/technologies.scss';
 
 // Страницы
 @import 'pages/all-pages.scss';
+@import 'pages/projects.scss';
 
+// Библиотеки
 @import 'libs/jquery-ui.scss';
+@import 'libs/swiper.min.scss';

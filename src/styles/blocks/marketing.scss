@@ -54,7 +54,7 @@
         font-weight: 600;
         line-height: 140%;
         margin: 38px 0 0 0;
-        max-width: 360px;
+        width: 360px;
     }
     &__result-img{
         float: right;
@@ -62,5 +62,39 @@
 }
 
 .marketing.wrapper{
-    padding: 126px 0 0 0;
+    padding: 186px 0 0 0;
+}
+
+@media(max-width: 1000px){
+    .marketing{
+        &__result-text{
+            float: none;
+            margin: 15px 0 0 0;
+            width: 90%;
+        }
+        &__result-img{
+            float: none;
+        }
+    }
+}
+
+@media(max-width: 850px){
+    .marketing{
+        .img{
+            display: none;
+        }
+        .text{
+            margin-left: 0;            
+            width: 90%;
+        }
+        h1{
+            font-size: 135%;
+        }
+        h3{
+            font-size: 105%;
+        }
+    }
+    .marketing ~ footer{
+         margin: 74px 0 0;
+    }
 }

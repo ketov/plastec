@@ -10,16 +10,17 @@ html
         link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic-ext")
     body  
 
-        img(src="assets/img/contacts-template.png" alt="макет" style="position: absolute; opacity: 0.2; left: 72px; top: 0; z-index: 1;")
+        //img(src="assets/img/contacts-template.png" alt="макет" style="position: absolute; opacity: 0.2; left: 72px; top: 0; z-index: 1;")
 
         include includes/header
 
         -var active = 'О компании';
         -var submenuactive = 'Контакты';
-        include includes/nav
-        include includes/contacts
-        include includes/footer
-        include includes/copyright
+        div.fixed-menu-container
+            include includes/nav
+            include includes/contacts
+            include includes/footer
+            include includes/copyright
                             
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
         

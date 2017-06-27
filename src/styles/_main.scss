@@ -29,3 +29,14 @@ body{
     font-family: SkodaBold;
     src: url('../fonts/skodapro-bold-webfont.ttf');
 }
+
+.fixed-menu-container{
+    position: relative;
+}
+
+@media(max-width: 1040px){
+    .wrapper{
+        min-width: auto;
+        width: 92%;
+    }
+}

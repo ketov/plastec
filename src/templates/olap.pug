@@ -15,10 +15,11 @@ html
 
         -var active = 'Продукты и решения';
         -var submenuactive = 'OLAP-отчетность';
-        include includes/nav
-        include includes/olap
-        include includes/footer
-        include includes/copyright
+        div.fixed-menu-container
+            include includes/nav
+            include includes/olap
+            include includes/footer
+            include includes/copyright
                             
        
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")

@@ -17,9 +17,9 @@
 }
 
 .article.wrapper{
-    max-width: 620px;
     min-width: auto;
-    padding: 89px 0 0;
+    padding: 142px 0 0;
+    width: 620px;
 }
 
 .ya-share2{
@@ -28,4 +28,31 @@
 
 .ya-share2__container_size_m .ya-share2__item {
     margin: 0 30px 0 0 !important;
+}
+
+@media(max-width: 850px){
+    .article{
+            width: 80%;
+    margin-left: 4%;
+        h1{
+            font-size: 135%;
+        }
+        img{
+            margin-top: 18px;
+        }
+    }
+    .article ~ footer{
+        margin: 74px 0 0;
+    }
+}
+
+@media(max-width: 720px){
+    .article.wrapper{
+        width: 90%;
+    }
+    .article{
+        img{
+            margin-bottom: 15px;
+        }
+    }
 }

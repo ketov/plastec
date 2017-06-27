@@ -1,0 +1,125 @@
+.contacts-text{
+    color: #1c1c1c;
+    font-size: 110%;
+    line-height: 165%;
+    margin: 0 auto;
+    padding: 170px 0 0 0;
+    width: 618px;
+    a{
+        color: #1c1c1c;
+        text-decoration: none;
+    }
+}
+
+#map{
+    height: 453px;
+    margin: 70px 0 0 0;
+    width: 100%;
+}
+
+.contacts-form{
+    margin: 0 auto;
+    width: 618px;
+    h1{
+        font-size: 245%;
+        margin: 70px 0 34px 0;
+    }
+    label{
+        color: #616161;
+        display: block;
+        font-size: 85%;
+        letter-spacing: .5px;
+        margin: 0 0 8px 0;
+    }
+    input{
+        border: 1px solid #b7b7b7;
+        border-radius: 5px;
+        display: block;
+        outline: none;
+        padding: 12px 0 11px 4%;
+        width: 96%;
+    }
+    textarea{
+        border: 1px solid #b7b7b7;
+        border-radius: 5px;
+        display: block;
+        font-family: Roboto, sans-serif;
+        height: 90px;
+        outline: none;
+        padding: 10px 0 0 1%;
+        resize: none;
+        width: 99%; 
+    }
+    .col-1{
+        float: left;
+        width: 48.5%;
+    }
+    .col-2{
+        float: right;        
+        width: 48.5%;
+    }
+    &__comment-label{
+        margin: 25px 0 8px 0 !important;
+    }
+    button{
+        background: #ea8211;
+        border: none;
+        border-radius: 47px;
+        color: #ffffff;
+        cursor: pointer;
+        float: right;
+        margin: 37px 0 0 0;
+        outline: none;
+        padding: 13px 28px 12px;
+        text-transform: uppercase;
+    }
+}
+
+@media(max-width: 720px){
+    .contacts-form{
+        width: 92%; 
+        .col-1{
+            width: 100%;
+        }
+        .col-2{
+            margin-top: 25px;
+            width: 100%;
+        }
+        h1{
+            font-size: 185%;
+            margin: 46px 0 20px;
+        }
+    }
+    .contacts-text{
+        width: 92%;
+    }
+}
+
+@media(max-width: 500px){
+    .contacts-form{
+        button{
+            margin-top: 26px;
+        }
+        &__comment-label{
+            margin-top: 18px !important;
+        }
+        label{
+            margin-top: 18px;
+        }
+        .col-2{
+            margin-top: 0;
+        }
+        h1{
+            margin-bottom: 0;
+        }
+    }
+    .contacts-form ~ footer{
+        margin-top: 70px;
+    }
+    #map{
+        margin: 42px 0 0;
+    }
+    .nav-mobile ~ .contacts-text {
+        padding: 94px 0 0 !important;
+    }
+}

@@ -2,6 +2,7 @@
     img{
         display: block;
         margin: 75px auto 0;
+        max-width: 100%;
     }
     .img{
         float: left;
@@ -55,5 +56,30 @@
 }
 
 .mobile-app.wrapper{
-    padding: 126px 0 0 0;
+    padding: 186px 0 0;
+}
+
+@media(max-width: 850px){
+    .mobile-app{
+        img{
+            margin-left: 0;
+            width: 90%;
+        }
+        .img{
+            display: none;
+        }
+        .text{
+            margin-left: 0;
+            width: 90%;
+        }
+        h1{
+            font-size: 135%;
+        }
+        h3{
+            font-size: 105%;
+        }
+    }
+    .mobile-app ~ footer{
+         margin: 74px 0 0;
+    }
 }

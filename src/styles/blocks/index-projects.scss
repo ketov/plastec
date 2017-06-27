@@ -1,0 +1,86 @@
+.index-projects{
+    margin: 0 auto;
+    padding: 74px 0 0 0;
+    width: 940px;
+    h3{
+        font-size: 220%;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .line{
+        background: #979797;
+        height: 1px;
+        margin: 17px auto 15px;
+        width: 71px;
+    }
+    &__text{
+        font-weight: 300;
+        line-height: 155%;
+        margin: 0 auto;
+        text-align: center;
+        width: 685px;
+    }
+    .row{
+        text-align: center;
+        margin: 54px 0 0 0;
+        img{
+            margin: 0 46px 0;
+            &:first-child, &:last-child{
+                margin: 0;
+            }
+        }
+    }
+    button{
+        background-color: #ea8211;
+        border: none;
+        border-radius: 100px;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,.16);
+        color: #ffffff;
+        cursor: pointer;
+        display: table;
+        font-size: 80%;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        margin: 45px auto 0;
+        outline: none;
+        padding: 19px 35px 16px;
+        text-transform: uppercase;
+        transition: 0.25s;
+        &:hover{
+            box-shadow: none;
+        }
+        &:active{
+            position: relative;
+            top: 2px;
+        }
+    }
+}
+
+.index-projects ~ footer{
+    margin: 92px 0 0 0;
+}
+
+@media(max-width: 1000px){
+    .index-projects{
+        width: 100%;
+        .row{
+            img{
+                display: block;
+                margin: 55px auto 0;
+                &:first-child, &:last-child{
+                margin: 55px auto 0;
+            }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .index-projects{
+        h3{
+            font-size: 160%;
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.index-about-us{
+    background: -moz-linear-gradient(180deg, rgba(254,150,14,1) 0%, rgba(241,122,15,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(241,122,15,1)), color-stop(100%, rgba(254,150,14,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(180deg, rgba(254,150,14,1) 0%, rgba(241,122,15,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(180deg, rgba(254,150,14,1) 0%, rgba(241,122,15,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(180deg, rgba(254,150,14,1) 0%, rgba(241,122,15,1) 100%); /* ie10+ */
+    background: linear-gradient(270deg, rgba(254,150,14,1) 0%, rgba(241,122,15,1) 100%); /* w3c */
+    color: #ffffff;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f17a0f', endColorstr='#fe960e',GradientType=1 ); /* ie6-9 */
+
+    margin: 77px 0 0 0;
+    padding: 60px 0 79px;
+    text-align: center;
+    &__container{
+        margin: 0 auto;
+        width: 940px;
+    }
+
+    h3{
+        font-size: 250%;
+        font-weight: 500;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    .line{
+        background: #ffffff;
+        height: 1px;
+        margin: 17px auto 15px;
+        width: 71px;
+    }
+    &__text{
+        font-weight: 300;
+        line-height: 155%;
+        margin: 0 auto;
+        text-align: center;
+        width: 685px;
+    }
+    .row{
+        margin: 43px 0 0 0;
+    }
+    .item{
+        display: inline-block;
+        width: 33%;
+    }
+    .bold{
+        font-size: 200%;
+        font-weight: 600;
+        margin: 13px 0 0 0;
+    }
+    .normal{
+        font-size: 120%;
+    }
+    button{
+        background-color: #fff;
+        border: none;
+        border-radius: 100px;
+        box-shadow: 0 4px 10px 0 rgba(0,0,0,.16);
+        color: #f6694b;
+        cursor: pointer;
+        font-size: 80%;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        margin: 53px 0 0 0;
+        outline: none;
+        padding: 19px 35px 16px;
+        text-transform: uppercase;
+        transition: 0.25s;
+        &:hover{
+            box-shadow: none;
+        }
+        &:active{
+            position: relative;
+            top: 2px;
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .index-about-us{
+        &__container{
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 870px){
+    .index-about-us{
+        .item{
+                display: block;
+    margin: 42px auto 0;
+        }
+    }
+}
+
+@media(max-width: 720px){
+    .index-about-us{
+        &__text{
+            width: 80%;
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .index-about-us{
+        h3{
+            font-size: 160%;
+        }
+        .item{
+            width: 80%;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+doctype html
+html
+    head
+        title ПЛАС-ТЕК | Наши проекты
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8")   
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic-ext")
+    body  
+
+        //img(src="assets/img/projects-template.png" alt="макет" style="position: absolute; opacity: 0.2; left: 72px; top: 0; z-index: 1;")
+
+        include includes/header
+
+        -var active = 'О компании';
+        -var submenuactive = 'Наши проекты';
+        div.fixed-menu-container
+            include includes/nav
+
+            article.projects 
+                p С 2005 года компания Плас-Тек® специализируется на разработке и внедрении эффективных решений для производственных, коммерческих и государственных структур. За это время мы успешно внедрили более 100 проектов, вот некоторые из них:
+                include includes/projects-slider
+            div.gallery-thumbs
+                div.swiper-wrapper
+                    div.swiper-slide
+                        img(src="assets/img/projects-slide-2.png")
+                    div.swiper-slide
+                        img(src="assets/img/projects-slide-3.png")
+                    div.swiper-slide
+                        img(src="assets/img/projects-slide-4.png")
+                    div.swiper-slide
+                        img(src="assets/img/projects-slide-5.png")
+                    div.swiper-slide
+                        img(src="assets/img/projects-slide-6.png")
+                    div.swiper-slide
+                        img(src="assets/img/projects-slide-7.png")
+                    div.swiper-slide
+                        img(src="assets/img/projects-slide-8.png")
+                    div.swiper-slide
+                        img(src="assets/img/projects-slide-9.png")
+                    div.swiper-slide
+                        img(src="assets/img/projects-slide-10.png")
+                    div.swiper-slide
+                        img(src="assets/img/projects-slide-11.png")
+                    div.swiper-slide
+                        img(src="assets/img/projects-slide-12.png")
+
+            include includes/footer
+            include includes/copyright
+                            
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js")
+        script(src="assets/js/app.min.js")

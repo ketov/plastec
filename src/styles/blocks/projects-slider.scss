@@ -1,0 +1,26 @@
+.projects-slider{
+    color: #1c1c1c;
+    margin: 0 auto;
+    min-width: 940px;
+    overflow: hidden;
+    position: relative;
+    width: 1010px;
+    z-index: 1;
+    .swiper-slide{
+        &--1{
+            background: url('../img/slide-1.png') no-repeat 100% 180px;
+        }
+        &--2{
+            background: url('../img/slide-2.png') no-repeat 100% 80px;
+        }
+        &--3{
+            background: url('../img/slide-3.png') no-repeat 100% 38px;
+        }
+        &--4{
+            background: url('../img/slide-4.png') no-repeat 100% 180px;
+        }
+        &--5{
+            background: url('../img/slide-5.png') no-repeat 100% 130px;
+        }
+    }
+}

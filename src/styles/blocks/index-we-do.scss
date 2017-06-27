@@ -1,0 +1,139 @@
+.index-we-do{
+    margin: 0 auto;
+    padding: 55px 0 0 0;
+    width: 940px;
+    h3{
+        color: #2c2c2c;
+        font-size: 220%;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 0;
+        text-align: center;
+    }
+    &__line{
+        background: #979797;
+        height: 1px;
+        margin: 17px auto 15px;
+        width: 71px;
+    }
+    .text{
+        color: #1c1c1c;
+        font-weight: 300;
+        line-height: 160%;
+        margin: 0 auto;
+        text-align: center;
+        width: 690px;
+    }
+    .item{
+        float: left;
+        position: relative;
+        text-align: center;
+        &--1:after, &--2:after, &--4:after{
+            content: '';
+            background: #dedede;
+            height: 78px;
+            position: absolute;
+            top: 45px;
+            right: 0;
+            width: 1px;
+        }
+        &--1, &--2, &--3{
+            width: 33%;
+        }
+        &--4, &--5{
+            width: 50%;
+        }
+        &--5{
+            img{
+                margin: 10px 0 0 0;
+            }
+            p{
+                margin: 28px auto 0!important;
+            }
+        }
+        p{
+            color: #2c2c2c;
+            display: block;
+            line-height: 125%;
+            margin: 21px auto 0;
+            text-align: center;
+            width: 224px;
+        }
+        &--1{
+            p{
+                margin-top: 38px;
+            }            
+        }
+        &--2{
+            img{
+                margin: 6px 0 0 0;
+            }            
+        }
+        &--3{
+            img{
+                margin: 11px 0 0 0;
+            }
+            p{
+                margin: 32px auto 0;
+            }
+        }
+    }
+    .row{
+        margin: 45px 0 0;
+        &--2{
+            margin: 73px auto 0;
+            width: 68%;
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .index-we-do{
+            width: 100%;
+    }
+}
+
+@media(max-width: 800px){
+    .index-we-do{
+        .item{
+            float: none;
+            margin: 38px auto 0;
+            &:after{
+                background: #fff;
+            }
+            p{
+                line-height: 145%;
+                margin-top: 15px !important;
+            }
+        }
+        .row--2, .row--1{
+            margin-top: 0;
+        }
+    }
+}
+
+@media(max-width: 720px){
+    .index-we-do{
+        .text{
+            width: 80%;
+        }
+        .item{
+            width: 90%;
+            &:after{
+                display: none;
+            }
+            p{
+                max-width: 224px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .index-we-do{
+        h3{
+            font-size: 160%;
+        }
+    }
+}

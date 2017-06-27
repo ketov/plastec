@@ -1,6 +1,9 @@
 nav{
     background: #525252;
     padding: 23px 0 0 0;
+    position: absolute;
+    width: 100%!important;
+    z-index: 6;
     ul{        
         list-style: none;
         margin: 0;
@@ -8,7 +11,6 @@ nav{
         li{
             float: left;
             font-size: 85%;
-            margin: 0 0 0 56px;
             .logo{
                 a{
                     display: block;
@@ -34,6 +36,7 @@ nav{
                 padding: 0;                
                 position: absolute;
                 width: 100%;
+                z-index: 2;
                 li{
                     font-size: 100%;
                     margin: 0px 0 0 38px;
@@ -54,7 +57,16 @@ nav{
     ul{
         padding: 0 0 12px;
         li{
-            margin: 0 0 0 51px;
+            ul{
+                padding: 0;
+                z-index: 2;
+                li{
+                    margin: 0 0 0 38px;
+                }
+            }
+            &:first-child{
+                margin: 0;
+            }
         }
     }
     .lang{
@@ -68,6 +80,35 @@ nav{
     }
 }
 
+.nav-container:first-child a{
+    padding-left: 0;
+}
+
+.nav-container{
+    a{
+        padding: 23px 0 23px 50px;
+        transition: 0.2s;
+        &:hover{
+            color: #ef7a21;
+        }
+    }
+    a.active{
+        color: #ef7a21;
+    }
+    ul{
+        li{
+            a{
+                padding: 10px 0 10px 0;
+            }
+        }
+    }
+    .triangle{
+        position: relative;
+        top: -2px;
+        right: -5px;
+    }
+}
+
 .pc,
 .lang
 {
@@ -77,9 +118,14 @@ nav{
 .pc{
     font-size: 75%;
     margin: 0px 32px 0 0;
-    text-transform: none;
+    text-transform: none;    
     a{
+        padding: 12px 0px;
         text-transform: none;
+        transition: 0.2s;
+        &:hover{
+            color: #ef7a21;
+        }
     }
 }
 
@@ -95,12 +141,19 @@ nav{
         position: absolute;
         text-align: center;
         top: 4px;
+        transition: 0.2s;
+        &:hover{
+            color: #ef7a21;
+        }
         width: 100%;
     }
 }
 
 .lang.active{
     border: 1px solid #fff;
+    a:hover{
+        color: #ffffff;
+    }
 }
 
 .eng{
@@ -109,4 +162,83 @@ nav{
 
 .submenuactive{
     color: #f17a0f;
+}
+
+.activesubmenu ~ ul{
+    display: block !important;
+    z-index: 1 !important;;
+}
+
+@media(max-width: 1040px){
+    .nav-mobile{
+        .wrapper{
+            .wrapper{
+                width: 100%;
+            }
+        }       
+    }
+}
+
+.logo-mobile{
+    display: none;
+}
+
+.logo-mobile + .nav-container a:first-child{
+    padding-left: 0;
+}
+
+.nav-mobile{
+    padding: 9px 0 0;
+    #hamburger, .logo-mobile{
+        display: block;
+    }
+    .logo--nav2{
+        display: none;
+    }
+    .nav-container, .lang, .pc{
+        display: none;
+    }
+    ul{
+        padding: 0 0 4px;
+    }
+}
+
+.nav-mobile ~ .concept.wrapper,
+.nav-mobile ~ .mobile-app.wrapper,
+.nav-mobile ~ .processing.wrapper,
+.nav-mobile ~ .marketing.wrapper,
+.nav-mobile ~ .olap.wrapper,
+.nav-mobile ~ .technologies.wrapper,
+.nav-mobile ~ .about-company.wrapper,
+.nav-mobile ~ .article
+{
+    padding: 90px 0 0;
+}
+
+.nav-mobile ~ .contacts-text{
+    padding: 120px 0 0;
+}
+
+#hamburger{
+    cursor: pointer;
+    display: none;
+    height: 20px;
+    position: absolute;
+    right: 4%;
+    top: 17px;
+    width: 26px;
+    z-index: 1;
+    .hamburger__line{
+        background: #f17a0f;
+        height: 2px;
+        left: 0;
+        position: absolute;
+        width: 26px;
+        &--2{
+            top: 8px;
+        }
+        &--3{
+            top: 16px;
+        }
+    }
 }
