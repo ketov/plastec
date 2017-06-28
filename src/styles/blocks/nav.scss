@@ -105,6 +105,7 @@ nav{
     .triangle{
         position: relative;
         top: -2px;
+        transition: 0.2s;
         right: -5px;
     }
 }
@@ -188,7 +189,8 @@ nav{
 }
 
 .nav-mobile{
-    padding: 9px 0 0;
+    padding: 9px 0 0;    
+    transition: 0.3s;
     #hamburger, .logo-mobile{
         display: block;
     }
@@ -197,11 +199,61 @@ nav{
     }
     .nav-container, .lang, .pc{
         display: none;
+        margin-top: 20px;
+    }
+    .nav-container{
+        a{
+            padding-left: 0;
+        }
+        .triangle{
+            top: -3px;
+            transform: rotate(-90deg);
+        }
+    }
+    .lang{
+        bottom: 23px;
+        position: absolute;
+        right: 4%;
+    }
+    .lang.eng{
+        margin-right: 40px;
     }
     ul{
         padding: 0 0 4px;
+        li{
+            display: block;
+            float: none;
+            ul{
+                margin-left: -4%;
+                padding-bottom: 0;
+                position: relative;
+                transition: 0;
+                width: 108%;
+                li{
+                    border-bottom: 1px solid #5a5a5a;
+                    margin-left: 0;
+                    padding: 0 0 0 4%;
+                    a{
+                        display: block;
+                        padding: 10px 0 12px 0;
+                    }
+                }
+            }
+        }
     }
 }
+
+.nav-mobile.active{
+    padding-bottom: 24px;
+}
+
+.nav-container.active{
+    .triangle{
+        top: -2px;
+        transform: rotate(0);
+    }
+}
+
 
 .nav-mobile ~ .concept.wrapper,
 .nav-mobile ~ .mobile-app.wrapper,
@@ -223,22 +275,48 @@ nav{
     cursor: pointer;
     display: none;
     height: 20px;
+    margin-right: -8px;
+    padding: 8px;
     position: absolute;
     right: 4%;
-    top: 17px;
+    top: 10px;
     width: 26px;
     z-index: 1;
+    &:hover .hamburger__line{
+        background: #ff9f37;
+    }
     .hamburger__line{
         background: #f17a0f;
         height: 2px;
-        left: 0;
+        left: 8px;
+        opacity: 1;
         position: absolute;
+        transition: 0.2s;
         width: 26px;
-        &--2{
+        &--1{
             top: 8px;
+        }
+        &--2{
+            top: 16px;
+        }
+        &--3{
+            top: 24px;
+        }
+    }
+}
+
+#hamburger.active{
+    .hamburger__line{
+        &--1{
+            top: 16px;
+            transform: rotate(45deg);
+        }
+        &--2{
+            opacity: 0; 
         }
         &--3{
             top: 16px;
+            transform: rotate(-45deg);
         }
     }
 }
