@@ -1,21 +1,21 @@
 'use strict'
 
 
-function isMobile() {
+/*function isMobile() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         return true
     } else {
         return false
     }
-}
+}*/
 
 $(document).ready(function () {
-    var body = $('body'),
+    /*var body = $('body'),
             timer,
             windowHeight = $(window).height(),
             windowWidth = $(window).width()
 
-//Задаем размеры блокам
+
     var setHeight = function () {
 
     }
@@ -38,5 +38,5 @@ $(document).ready(function () {
             body.removeClass('disable-scroll-hover')
         }, 200);
 
-    });
+    });*/
 });

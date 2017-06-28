@@ -31,7 +31,7 @@ $(document).ready(function () {
     nav();
     $(window).resize(function () {
         nav();
-    });
+    }); 
 
     $('#hamburger').on('click', function () {
         var el = $(this);
