@@ -32,7 +32,7 @@
             }
         }
     }
-    button{
+    a.button{
         background-color: #ea8211;
         border: none;
         border-radius: 100px;
@@ -46,6 +46,7 @@
         margin: 45px auto 0;
         outline: none;
         padding: 19px 35px 16px;
+        text-decoration: none;
         text-transform: uppercase;
         transition: 0.25s;
         &:hover{

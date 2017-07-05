@@ -50,19 +50,21 @@
     .normal{
         font-size: 120%;
     }
-    button{
+    .button{
         background-color: #fff;
         border: none;
         border-radius: 100px;
         box-shadow: 0 4px 10px 0 rgba(0,0,0,.16);
         color: #f6694b;
         cursor: pointer;
+        display: table;
         font-size: 80%;
         font-weight: 600;
         letter-spacing: 0.4px;
-        margin: 53px 0 0 0;
+        margin: 53px auto 0;
         outline: none;
         padding: 19px 35px 16px;
+        text-decoration: none;
         text-transform: uppercase;
         transition: 0.25s;
         &:hover{

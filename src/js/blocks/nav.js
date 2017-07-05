@@ -1,15 +1,15 @@
 $(document).ready(function () {
     $('.nav-container').hover(
             function () {
-                if ($(window).width() > 1040) {
-                    $(this).children('ul').show();
+                if ($(window).width() > 1040 && !$(this).children('a').hasClass('activesubmenu')) {
+                    $(this).children('ul').stop(true, true).show('drop', { direction: 'down' }, 250);
                 } else {
                     return;
                 }
             },
             function () {
-                if ($(window).width() > 1040) {
-                    $(this).children('ul').hide();
+                if ($(window).width() > 1040 && !$(this).children('a').hasClass('activesubmenu')) {
+                    $(this).children('ul').stop(true, true).hide('drop', { direction: 'down' }, 250);
                 } else {
                     return;
                 }
